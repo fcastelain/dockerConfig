@@ -1,0 +1,33 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/workspace/gitAction
+Cloning the remote Git repository
+Cloning repository https://github.com/fcastelain/computer-database.git
+ > git init /var/jenkins_home/workspace/gitAction # timeout=10
+Fetching upstream changes from https://github.com/fcastelain/computer-database.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username fcastelain # timeout=10
+ > git config --local credential.helper store --file=/tmp/git7380238720150397361.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/fcastelain/computer-database.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/fcastelain/computer-database.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/fcastelain/computer-database.git # timeout=10
+Fetching upstream changes from https://github.com/fcastelain/computer-database.git
+using .gitcredentials to set credentials
+ > git config --local credential.username fcastelain # timeout=10
+ > git config --local credential.helper store --file=/tmp/git1956577521601563014.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/fcastelain/computer-database.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/devJenkins^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/devJenkins^{commit} # timeout=10
+Checking out Revision b046e5e1f5c9f8a09f6997d95c3452bdb2c7df0e (refs/remotes/origin/devJenkins)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b046e5e1f5c9f8a09f6997d95c3452bdb2c7df0e
+First time build. Skipping changelog.
+[gitAction] $ /bin/sh -xe /tmp/hudson7954251998573671473.sh
++ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+fcastelain/mysql    latest              12280e02825e        27 hours ago        324.8 MB
+fcastelain/maven    latest              f39470141d9b        27 hours ago        948.8 MB
+Finished: SUCCESS
